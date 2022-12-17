@@ -5,6 +5,9 @@ WORKDIR /app
 
 ADD  . /app
 
+RUN sudo apt update
+RUN sudo apt install tesseract-ocr
+
 RUN pip install --upgrade pip 
 RUN pip install -r requirements.txt
 
