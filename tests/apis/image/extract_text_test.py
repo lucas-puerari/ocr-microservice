@@ -17,12 +17,13 @@ def test_200_extract_text(client, image_name, mimetype):
 
     image_path = f"{os.getcwd()}/tests/apis/image/data/{image_name}"
 
-    response = client.post(
-        "/extract-text",
-        files={
-            "file": (image_name, open(image_path, "rb"), mimetype)
-        }
-    )
+    with open(image_path, "rb") as image:
+        response = client.post(
+            "/extract-text",
+            files={
+                "file": (image_name, image, mimetype)
+            }
+        )
 
     content = response.json()
 
@@ -45,12 +46,13 @@ def test_400_extract_text(client, image_name, mimetype):
 
     image_path = f"{os.getcwd()}/tests/apis/image/data/{image_name}"
 
-    response = client.post(
-        "/extract-text",
-        files={
-            "file": (image_name, open(image_path, "rb"), mimetype)
-        }
-    )
+    with open(image_path, "rb") as image:
+        response = client.post(
+            "/extract-text",
+            files={
+                "file": (image_name, image, mimetype)
+            }
+        )
 
     assert response.status_code == 400
     assert response.json() == {
