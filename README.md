@@ -1,4 +1,4 @@
-# ORC Plugin
+# OCR Plugin
 
 [![Python
 version](https://img.shields.io/badge/python-v3.10-blue)](.coverage/html/index.html)
