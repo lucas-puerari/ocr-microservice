@@ -19,6 +19,8 @@ app = FastAPI(
 app.include_router(liveness_handler.router)
 app.include_router(readiness_handler.router)
 app.include_router(checkup_handler.router)
+
+# OCR
 app.include_router(extract_text_handler.router)
 
 if __name__ == '__main__':
