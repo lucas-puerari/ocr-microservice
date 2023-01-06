@@ -9,10 +9,11 @@ from src.apis.schemas.extract_text_handler import ExtractTextResponse
 router = APIRouter()
 
 
-allowed_mimetypes = [
-  "image/jpeg",
-  "image/png"
-]
+allowed_mimetypes = {
+    "image/jpeg",
+    "image/png"
+}
+
 
 @router.post(
     "/extract-text",
