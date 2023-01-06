@@ -37,7 +37,7 @@ Currently, this microservice only supports image files with the following MIME t
       }
 
       
-### Prescription
+#### Prescription
 
 <img src="doc/images/ocr-test-medical-prescription.jpg" width="300"/>
 
@@ -45,7 +45,7 @@ Currently, this microservice only supports image files with the following MIME t
         "message": "Adobe Stock | #5667167\n\nEAH GB OSESS616 Luce 978269\n\nMEDICAL CENTRE\n\n241 St\nNew York, SY9I73, USA\n\name_Joba Smith,\naopness 162 Example St MY vate 0\n\nBy\n\nBeteloe 100mg - 1 tab BID\nDortlamidvm 10 mg =! tab BID\nCimetidine 50 mg - 2 tabs TID\nOnprelel SOng «1 4b QD\n\n \n\n \n\n \n\n \n\nDe. Steve Jeharon\na\n\nLape\nREFILL 0702 3.4 5 PRN\n\n \n\f"
       } 
 
-### Invoice
+#### Invoice
 
 <img src="doc/images/ocr-test-invoice.jpg" width="300"/>
 
