@@ -39,4 +39,4 @@ async def extract_text_handler(file: UploadFile):
 
     text_list = pytesseract.image_to_string(image)
 
-    return {"messsage": text_list}
+    return {"message": text_list}
