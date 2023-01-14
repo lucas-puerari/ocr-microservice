@@ -9,17 +9,18 @@
 ## Description
 This is a simple OCR microservice written in Python using the [FastAPI](https://github.com/tiangolo/fastapi) framework and the [PyTesseract](https://github.com/madmaze/pytesseract) library, which is a wrapper for Google's [Tesseract OCR Engine](https://github.com/tesseract-ocr/tesseract). It provides a single endpoint, `/extract-text`, which allows users to extract text from images. To extract text from an image, make a POST request to the `/extract-text` endpoint with the image file attached. The microservice will return a JSON object containing the extracted text.
 
-Request
+**Request**
+(run this curl from `/doc/images` folder)
 
       curl -X 'POST' \
         'http://0.0.0.0:3000/extract-text' \
         -H 'accept: application/json' \
         -H 'Content-Type: multipart/form-data' \
-        -F 'file=@hello-world.jpg;type=image/jpeg'
+        -F 'file=@ocr-hello-world.png;type=image/png'
 
-Response
+**Response**
 
-      { message: "Hello World" }
+      { "message": "Hello world\n\f" }
 
 ### Limitations
 Currently, this microservice only supports image files with the following MIME types:
