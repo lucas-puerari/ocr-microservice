@@ -10,7 +10,7 @@ router = APIRouter()
     "/-/ready",
     response_model=StatusOkResponse,
     status_code=status.HTTP_200_OK,
-    tags=["Readiness"]
+    include_in_schema=False
 )
 def readiness():
     """
