@@ -11,7 +11,8 @@ from src.apis.image import extract_text_handler
 load_dotenv('default.env')
 
 app = FastAPI(
-    openapi_url=None,
+    openapi_url="/documentation/json",
+    docs_url=None,
     redoc_url=None
 )
 
