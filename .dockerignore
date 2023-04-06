@@ -1,1 +1,8 @@
+.badges
+.coverage
+.github
+.pytest_cache
+.venv
+assets
+load-tests
 tests

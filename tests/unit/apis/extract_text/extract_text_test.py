@@ -15,7 +15,7 @@ def test_200_extract_text(client, image_name, mimetype):
     TODO
     """
 
-    image_path = f"{os.getcwd()}/tests/apis/image/data/{image_name}"
+    image_path = f"{os.getcwd()}/tests/unit/apis/extract_text/assets/{image_name}"
 
     with open(image_path, "rb") as image:
         response = client.post(
@@ -44,7 +44,7 @@ def test_400_extract_text(client, image_name, mimetype):
     TODO
     """
 
-    image_path = f"{os.getcwd()}/tests/apis/image/data/{image_name}"
+    image_path = f"{os.getcwd()}/tests/unit/apis/extract_text/assets/{image_name}"
 
     with open(image_path, "rb") as image:
         response = client.post(

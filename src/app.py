@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 from src.apis.core.liveness import liveness_handler
 from src.apis.core.readiness import readiness_handler
 from src.apis.core.checkup import checkup_handler
-from src.apis.image import extract_text_handler
+from src.apis.extract_text import extract_text_handler
 
 
 load_dotenv('default.env')
