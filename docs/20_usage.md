@@ -8,7 +8,7 @@ To extract text from an image, make a POST request to the `/extract-text` endpoi
 
 **Request**
 
-To try the following request, go to `/docs/images` folder and run the following curl in your terminal
+To try the following request, go to `/assets/images` folder and run the following curl in your terminal
 
       curl -X 'POST' \
         'http://0.0.0.0:3000/extract-text' \

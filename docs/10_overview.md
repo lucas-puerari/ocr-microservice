@@ -12,7 +12,7 @@ To give an idea of how the microservice works, practical examples are given belo
 ### Multilingual sample
 This example shows how the microservice is able to recognize texts written in different languages in the same image.
 
-<img src="images/ocr-multilingual-sample.png" width="300"/>
+<img src="../assets/images/ocr-multilingual-sample.png" width="300"/>
 
 The following is the outcome achieved with the given image.
 
@@ -23,7 +23,7 @@ The following is the outcome achieved with the given image.
 ### Tabular sample
 This example shows how the microservice is able to recognize text given in a table.
 
-<img src="images/ocr-sales-quote-sample.png" width="300"/>
+<img src="../assets/images/ocr-sales-quote-sample.png" width="300"/>
 
 The following is the outcome achieved with the given image.
 
