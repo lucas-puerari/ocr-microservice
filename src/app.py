@@ -12,6 +12,7 @@ load_dotenv('default.env')
 
 app = FastAPI(
     openapi_url="/documentation/json",
+    docs_url=None,
     redoc_url=None
 )
 
