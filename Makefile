@@ -22,7 +22,7 @@ test:
 	python -m pytest tests
 
 load-test:
-	locust -f tests/load/locustfile.py
+	python -m locust -f tests/load/locustfile.py
 
 coverage:
 	coverage run --data-file ${COVERAGE_DATA_FILE} -m pytest tests
