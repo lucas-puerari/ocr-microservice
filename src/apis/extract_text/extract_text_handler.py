@@ -3,7 +3,7 @@ import pytesseract
 from PIL import Image
 from fastapi import APIRouter, status, UploadFile, HTTPException
 
-from src.apis.schemas.extract_text_handler import ExtractTextResponse
+from src.apis.schemas.message_schema import MessageResponse
 
 
 router = APIRouter()
@@ -17,7 +17,7 @@ allowed_mimetypes = {
 
 @router.post(
     "/extract-text",
-    response_model=ExtractTextResponse,
+    response_model=MessageResponse,
     status_code=status.HTTP_200_OK,
     tags=["OCR"]
 )
