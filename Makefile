@@ -21,6 +21,9 @@ lint:
 test:
 	python -m pytest tests
 
+load-test:
+	locust -f tests/load/locustfile.py
+
 coverage:
 	coverage run --data-file ${COVERAGE_DATA_FILE} -m pytest tests
 	coverage html --data-file ${COVERAGE_DATA_FILE} -d ${COVERAGE_HTML_DIR}

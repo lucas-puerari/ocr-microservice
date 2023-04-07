@@ -22,14 +22,14 @@ please check the [Python official documentation](https://docs.python.org/3/libra
 To activate your virtual envirorment run the following command on
 your terminal:
 
-```shell
+```
 source /path/to/virtual/environment/bin/activate
 ```
 
 When finished, to deactive the virtual envirorment run the following
 command:
 
-```shell
+```
 deactivate
 ```
 
@@ -41,26 +41,31 @@ that contains the recipe to build and run your program. So, listed below are the
 commands that can be executed by the make command:
 
 Install requirements and pre-commit:
-```shell
+```
 make setup
 ```
 
 Run application locally:
-```shell
+```
 make start
 ```
 
 Run linter:
-```shell
+```
 make lint
 ```
 
 Run tests:
-```shell
+```
 make test
 ```
 
+Run load tests:
+```
+make load-tests
+```
+
 Compute the coverage:
-```shell
+```
 make coverage
 ```
