@@ -9,10 +9,10 @@ class User(HttpUser):
 
     @task
     def extract_text_from_hello_world_sample(self):
-        sample1 = open('../assets/images/ocr-hello-world-sample.png', 'rb')
-        files = [
-            ('sample1', sample1),
-        ]
+        sample1 = open('assets/images/ocr-hello-world-sample.png', 'rb')
+        files = {
+            'file': ('ocr-hello-world-sample.png', sample1, 'image/png')
+        }
 
         with self.client.post(
             "/extract-text",
